@@ -1,86 +1,169 @@
-.story-card {
-    margin: 2px;
-    border: 1px solid #000;
-    padding: 5px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+
+
+body {
+    background-color: rgb(240, 239, 239);
 }
 
-.story-card img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+img {
+    filter: grayscale(50%);
 }
 
-#latest-stories {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 1px 1px;
-    grid-template-areas: "left-1 right-1" "left-1 right-2" "left-1 right-3";
-    max-height: 500px;
-}
-
-#story-card-1 {
-    grid-area: left-1;
-}
-
-#story-card-2 {
-    grid-area: right-1;
-}
-
-#story-card-3 {
-    grid-area: right-2;
-}
-
-#story-card-4 {
-    grid-area: right-3;
-}
-
-#story-card-2 a,
-#story-card-3 a,
-#story-card-4 a {
+header {
     display: flex;
-    max-height: 120px;
-    width: 100%;
-    height: 100%;
-}
-
-#story-card-2 .story-card-text h3,
-#story-card-3 .story-card-text h3,
-#story-card-4 .story-card-text h3 {
-    font-size: 16px;
-}
-
-#story-card-2 .story-card-text h4,
-#story-card-3 .story-card-text h4,
-#story-card-4 .story-card-text h4 {
-    font-size: 12px;
-}
-
-#story-card-2 img,
-#story-card-3 img,
-#story-card-4 img {
-    width: 33%;
-    height: 100%;
-    margin-right: 5px;
-}
-
-#all-stories {
-    display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid #000;
+    background-image: url('news/images/createStory.jpeg');
 }
 
-#all-stories .story-card {
-    flex-basis: 32%;
-    flex-grow: 1;
+img {
+    filter: grayscale(50%);
 }
 
-#story-content {
-    text-align: justify;
+h1 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    text-decoration: none;
+    font-size: 3rem;
+    margin: 0;
+    color: #8246AF;
 }
 
-#story-content img {
-    float: right;
-    margin: 0 0 10px 10px;
-    width: 50%;
+h2 {
+   font-family: 'Montserrat Subrayada', 
+   
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0;
+    
+}
+
+h5 {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #8246AF;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 1rem;
+    margin-bottom: 0em;
+}
+
+#write_search_story{
+    background-color: #8246AF; 
+}
+
+#nav_write_story {
+    color: #FFA300;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 60%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#search_form { 
+    font-size: 1.5rem;
+    border: 1rem; 
+    border:#8246AF;
+    width: 38%;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius:3rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    vertical-align: middle;
+    background-color: white;
+   
+}
+
+#createStoryForm {
+    background-color: rgb(195, 193, 189);
+}
+
+#form-wrapper{
+    display: inline-block;
+    width: 40%;
+    vertical-align: middle;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2em;
+    border: 5em;
+
+} 
+
+#form-img{
+    width: 48.5%;
+    display: inline-block;
+    vertical-align: middle; 
+    height: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    height:max-content;   
+}
+
+label {
+    font-weight: bold;
+    color: #8246AF;
+    display: block;
+    padding-top: 2em;
+}
+
+input {
+    box-sizing: border-box;
+    border: 1px solid #ebeeef;
+    background-color: #f9fafa;
+    width:50%;
+}
+
+#submit_button
+{
+    background-color: #8246AF;
+    border: none;
+    color: #fff;
+    margin-top: 1rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+ 
+#header-text {
+    flex-basis: 60%;
+    display: flex;
+}
+
+#header-nav {
+    color: #FFA300;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+nav {
+    text-align:right;
+    display: inline-block;
+    width: 38%;
+}
+
+a {
+    margin: 2px;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+a, p {
+    font-family: monospace;
 }

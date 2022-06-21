@@ -1,13 +1,24 @@
 {% extends "base.html" %}
+{% load static %}
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
+{% endblock %}
 
 {% block content %}
-
-<form action="" method="post">
-
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="submit">
-
-</form>
+            
+<body>
+    <div id="createStoryForm">
+        <h5>Hi {{user.username}}, share your stories!</h4>
+        <img id=form-img src="{% static 'news/images/createStory.jpeg' %}">
+        <div id="form-wrapper">
+            <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input id= "submit_button" type="submit" value="submit">
+            </form>
+        
+        </div>
+    </div>
+</body>
 
 {% endblock %}
